@@ -23,7 +23,20 @@ class JWT {
                 hash: {
                     name: 'SHA-512'
                 }
-            }
+            },
+            ES256: {
+                name: 'ECDSA',
+                namedCurve: 'P-256',
+                hash: { 
+                    name: 'SHA-256'
+                },
+            },
+            RS256: {
+                name: 'RSASSA-PKCS1-v1_5',
+                hash: { 
+                    name: 'SHA-256'
+                },
+            },
         }
     }
     _utf8ToUint8Array(str) {
